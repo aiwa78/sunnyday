@@ -1,5 +1,8 @@
 <h1>Listing products</h1>
 
+<% flash.each do |name, msg| %>
+  <%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+<% end %>
 <table>
   <thead>
     <tr>
